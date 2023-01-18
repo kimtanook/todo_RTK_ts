@@ -7,7 +7,11 @@ const LayoutStyle = styled.div`
   max-width: 1200px;
 `;
 
-const Layout = (props: any) => {
+// interface Props {
+//   children: React.ReactNode;
+// }
+
+const Layout = (props: { children: React.ReactNode }) => {
   return <LayoutStyle>{props.children}</LayoutStyle>;
 };
 
