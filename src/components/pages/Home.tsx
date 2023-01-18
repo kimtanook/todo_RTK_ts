@@ -12,7 +12,6 @@ function TodoList() {
   const globalTodo = useSelector<ReducerType, TodoType[]>(
     (state) => state.todoReducer.todos
   );
-  console.log('globalTodo : ', globalTodo);
   const dispatch = useDispatch();
 
   const globalTodoNotDone = globalTodo.filter((item: TodoType) => !item.isDone);
